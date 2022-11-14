@@ -1,5 +1,7 @@
 package pro.sky.course2;
 
+import org.apache.commons.lang3.StringUtils;
+
 import java.util.Objects;
 
 public class Employee {
@@ -14,11 +16,23 @@ public class Employee {
     private int department;
 
     public Employee(String name, String surName, String lastName, int salary, int department) {
-        this.name = name;
-        this.surName = surName;
-        this.lastName = lastName;
+        if (StringUtils.isAlphaSpace(name) && !StringUtils.isBlank(name)) {
+            this.name = StringUtils.capitalize(name);
+        } else {
+            throw new RuntimeException("Status 400 Bad Request");
+        }
+        if (StringUtils.isAlphaSpace(surName) && !StringUtils.isBlank(surName)) {
+            this.surName = StringUtils.capitalize(surName);
+        } else {
+            throw new RuntimeException("Status 400 Bad Request");
+        }
+        if (StringUtils.isAlphaSpace(lastName) && !StringUtils.isBlank(lastName)) {
+            this.lastName = StringUtils.capitalize(lastName);
+        } else {
+            throw new RuntimeException("Status 400 Bad Request");
+        }
         this.salary = salary;
-        this.department = department;
+        setDepartment(department);
         counter++;
         this.id = getCounter();
     }
@@ -87,6 +101,4 @@ public class Employee {
                 " Отдел-" + department +
                 '\n';
     }
-
-
 }
