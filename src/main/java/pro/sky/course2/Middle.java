@@ -16,7 +16,7 @@ public class Middle {
         for (int i = 0; i < e.length; i++) {
             if (e[i].getSalary() > max && e[i].getDepartment() == department) {
                 max = e[i].getSalary();
-                name = e[i].getName() + e[i].getSurName() + e[i].getLastName() + "отдел " + e[i].getDepartment();
+                name = e[i].getName() + " " + e[i].getSurName() + " " + e[i].getLastName() + " " + "отдел " + e[i].getDepartment();
             }
         }
         System.out.println("Максимальная зп= " + max + " у сотрудника " + name);
@@ -28,7 +28,7 @@ public class Middle {
         for (int i = 0; i < e.length; i++) {
             if (e[i].getSalary() < min && e[i].getDepartment() == department) {
                 min = e[i].getSalary();
-                name = e[i].getName() + e[i].getSurName() + e[i].getLastName() + "отдел " + e[i].getDepartment();
+                name = e[i].getName() + " " + e[i].getSurName() + " " + e[i].getLastName() + " " + "отдел " + " " + e[i].getDepartment();
             }
         }
         System.out.println("Минимальная зп= " + min + " у сотрудника " + name);
@@ -49,7 +49,7 @@ public class Middle {
             if (e[i].getDepartment() == department) {
                 salary = e[i].getSalary() / 100 * p + e[i].getSalary();
                 Employee employee = e[i];
-                System.out.println("Сотрудник: " + employee.getName() + employee.getLastName() + employee.getSurName() + "Проиндексированная зп на " + p + "% равна " + salary);
+                System.out.println("Сотрудник: " + employee.getName() + " " + employee.getLastName() + " " + employee.getSurName() + "Проиндексированная зп на " + p + "% равна " + salary);
             }
         }
     }
@@ -58,7 +58,7 @@ public class Middle {
         for (int i = 0; i < e.length; i++) {
             if (e[i].getDepartment() == department) {
                 Employee employee = e[i];
-                System.out.println("Сотрудники отдела " + department + ": " + employee.getSurName() + employee.getName() + employee.getLastName() + employee.getSalary());
+                System.out.println("Сотрудники отдела " + department + ": " + employee.getSurName() + " " + employee.getName() + " " + employee.getLastName() + " " + employee.getSalary());
             }
         }
     }
@@ -67,7 +67,7 @@ public class Middle {
         for (int i = 0; i < e.length; i++) {
             if (e[i].getSalary() < salary) {
                 Employee employee = e[i];
-                System.out.println("Сотрудники с зп меньше " + salary + " id:" + employee.getId() + " " + employee.getSurName() + employee.getName() + employee.getLastName() + employee.getSalary());
+                System.out.println("Сотрудники с зп меньше " + salary + " " + " id:" + " " + employee.getId() + " " + employee.getSurName() + " " + employee.getName() + " " + employee.getLastName() + " " + employee.getSalary());
             }
         }
     }
@@ -76,7 +76,7 @@ public class Middle {
         for (int i = 0; i < e.length; i++) {
             if (e[i].getSalary() >= salary) {
                 Employee employee = e[i];
-                System.out.println("Сотрудники с зп больше или равной " + salary + "id:" + employee.getId() + " " + employee.getSurName() + employee.getName() + employee.getLastName() + employee.getSalary());
+                System.out.println("Сотрудники с зп больше или равной " + salary + "id:" + employee.getId() + " " + employee.getSurName() + " " + employee.getName() + " " + employee.getLastName() + " " + employee.getSalary());
             }
         }
     }

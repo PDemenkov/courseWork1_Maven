@@ -4,16 +4,16 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Employee employee1 = new Employee("Ivan ", "Ivanov ", "Ivanovich ", 10000, 1);
-        Employee employee2 = new Employee("Sergey ", "Sergeev ", "Sergeevich ", 42000, 2);
-        Employee employee3 = new Employee("Ekaterina ", "Varlamova ", "Vasilevna ", 34431, 4);
-        Employee employee4 = new Employee("Alexander ", "Gerasimov ", "Viktorovich ", 52277, 4);
-        Employee employee5 = new Employee("Ekaterina ", "Titova ", "Valer'evna ", 35999, 3);
-        Employee employee6 = new Employee("Matvei ", "Poltorak ", "Petrov ", 120000, 2);
-        Employee employee7 = new Employee("Tatyana ", "Krukova ", "Nikolaevna ", 6344, 1);
-        Employee employee8 = new Employee("Garry ", "Gorshkov ", "Dmitrievich ", 23336, 1);
-        Employee employee9 = new Employee("Arkadiy ", "Shestakov ", "Valerevich ", 44377, 3);
-        Employee employee10 = new Employee("Ignat ", "Belyeav ", "Mihailovich ", 344122, 2);
+        Employee employee1 = new Employee("ivan", "Ivanov", "Ivanovich", 10000, 1);
+        Employee employee2 = new Employee("sergey", "Sergeev", "Sergeevich", 42000, 2);
+        Employee employee3 = new Employee("Ekaterina", "Varlamova", "Vasilevna", 34431, 4);
+        Employee employee4 = new Employee("Alexander", "Gerasimov", "Viktorovich", 52277, 4);
+        Employee employee5 = new Employee("Ekaterina", "Titova", "Valerevna", 35999, 3);
+        Employee employee6 = new Employee("Matvei", "Poltorak", "Petrov", 120000, 2);
+        Employee employee7 = new Employee("Tatyana", "Krukova", "Nikolaevna", 6344, 1);
+        Employee employee8 = new Employee("Garry", "Gorshkov", "Dmitrievich", 23336, 1);
+        Employee employee9 = new Employee("Arkadiy", "Shestakov", "Valerevich", 44377, 3);
+        Employee employee10 = new Employee("Ignat", "Belyeav", "Mihailovich", 344122, 2);
         employee3.setDepartment(3);//изменение отдела
 //        System.out.println(employee3.getId() + " id emp 3");// получить id
 //        System.out.println(Employee.getCounter()); //Создано объектов
